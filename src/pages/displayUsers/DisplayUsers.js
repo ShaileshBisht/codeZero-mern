@@ -9,7 +9,7 @@ function DisplayUsers() {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("http://localhost:5000/alluser")
+        .get("https://codezero-mern.herokuapp.com/alluser")
         .then((res) => setUserList(res.data));
     };
     fetchData();

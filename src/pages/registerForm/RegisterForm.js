@@ -8,7 +8,7 @@ function RegisterForm() {
   const [password, setPassword] = useState("");
 
   const addUser = () => {
-    axios.post("http://localhost:5000/", {
+    axios.post("https://codezero-mern.herokuapp.com/", {
       name: name,
       email: email,
       password: password,

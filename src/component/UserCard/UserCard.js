@@ -5,7 +5,7 @@ import axios from "axios";
 
 function UserCard({ username, email, id }) {
   const deleteUser = (id) => {
-    axios.delete(`http://localhost:5000/alluser/${id}`);
+    axios.delete(`https://codezero-mern.herokuapp.com/alluser/${id}`);
     window.location.reload(false);
   };
 
